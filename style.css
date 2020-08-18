@@ -1,0 +1,72 @@
+h1:hover{
+ color:red;
+}
+body{
+    font-size: 4rem;
+    background-color:linear-gradient();
+    background: linear-gradient(60deg,rgb(86, 128, 86) ,rgb(153, 221, 153),rgba(0, 0, 0, 0.329));
+
+}
+ul{
+    padding:12x;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    list-style: none;
+}
+li:nth-child(2){
+    color:red;
+}
+li:last-child{
+    color:green;
+}
+/* p:only-child{
+    font-size: 3rem;
+} */
+a:link{
+    color: blue;
+}
+a:visited{
+    color:darkorange;
+}
+/* every h3 that follows  p */
+P + h3{
+    color:red;
+}
+/* every button that follows textarea and they have the same perent */
+textarea ~ button{
+    color:red;
+}
+/* select all children even the non direct children */
+ul li{
+    font-weight: 700;
+}
+/* ul>li select only direct children  */
+
+/* attrbuit selector h2[attr=value] */
+h2[class=sub]{
+    font-style: italic;
+    font-size: 6rem;
+    color: teal;
+}
+/* evrey src where the source start with "../img/" */
+/* if it containes it anywhere we use * star */
+img[src^="../img/"]{
+    border-radius: 30%;
+}
+/* when class or anything spareated by white space  */
+h4[class~=article-h]{
+    color: blueviolet;
+    font-size: 4rem;
+    /* float: right; */
+    /* float:top; */
+}
+.red{
+    width: 400px;
+    height: 400px;
+    /* background: radial-gradient(red 20% , green 30%,pink 50%); or you can spacifiy the shape */
+    /* background: radial-gradient(circle,red 20% , green 30%,pink 50%); */
+    background: linear-gradient( to left , red , blue , yellow); 
+}
+
